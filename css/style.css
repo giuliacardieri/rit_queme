@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: normal;
+}
+
+body{
+	background-color: #f9f9f9;
+	color: #222;
+	font-family: raleway, helvetica, arial;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h1{
+    font-family: lato;
+	font-size: 26pt;
+	margin: 0 auto;
+	padding: 40px;
+}
+
+h2{
+    font-family: lato;
+	font-size: 24pt;
+	margin: 0 auto;
+	padding: 15px 0;
+
+}
+
+button{
+	background-color: #3d3d3d;
+    border: 0;
+    border-radius: 10px;
+    font-size: 26pt;
+    color: #fff;
+    margin: 10px;
+    padding: 15px 45px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+.nao{
+    background-color: #F56D5B;
+}
+
+.sim{
+    background-color: #75BA4C;
+}
+
+@media (min-width:1024){
+.again:hover, .tentar:hover{
+	background-color: #555;
+	opacity: 1;
+}
+
+button:hover{
+	opacity: 0.5;
+}
+}
+
+.tentar{
+	display: none;
+	margin: 10px auto;
+}
+
+img{
+	border-radius: 10px;
+}
+
+@media (max-width: 768px){
+  img{
+    width: 75%;
+  }
+  
+  h1{
+    padding: 20px;
+  }
+  
+  button{
+    padding: 15px 20px;
+    width: 150px;
+  }
+  
+  .again, .tentar, .big{
+    font-size: 14pt;
+  }
+  
+}
+
+main{
+	background-color: #4b4b4b;
+	border-radius: 10px;
+	color: #f9f9f9;
+	margin: 0 auto;
+	padding: 50px;
+	width: 50%;
+}
+
+#acerto-container{
+	background-color: #4b4b4b;
+	display: none;
+	height: 100%;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#acerto{
+	color: #f9f9f9;
+	display: none;
+	font-size: 26pt;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 250px;
+	width: 100%;
+}
